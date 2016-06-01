@@ -1,0 +1,14 @@
+{
+  "name": "Nodejs-hangouts-robot",
+  "version": "0.0.1",
+  "description": "Robot de chat para Google Hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola y más...",
+  "main": "robot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ulises Gascon",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "hangouts-bot": "^0.2.1"
+  }
+}
