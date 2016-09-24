@@ -1,14 +1,28 @@
 {
-  "name": "Nodejs-hangouts-robot",
-  "version": "0.0.1",
-  "description": "Robot de chat para Google Hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola y más...",
-  "main": "robot.js",
+  "name": "simple-hangouts-bot",
+  "homepage": "https://github.com/UlisesGascon/simple-hangouts-bot",
+  "version": "1.0.0",
+  "description": "Robot de chat para Google Hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola, Tweeter, Alchemy y más...",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ulises Gascon",
+  "author": {
+    "name": "Ulises Gascón",
+    "url": "https://github.com/UlisesGascon"
+  },
+  "keywords": [
+    "chatbot",
+    "hangouts",
+    "chat",
+    "bot",
+    "alchemy"
+  ],
+  "repository": "UlisesGascon/simple-hangouts-bot",
   "license": "GPL-3.0",
   "dependencies": {
-    "hangouts-bot": "^0.2.1"
+    "hangouts-bot": "^0.2.1",
+    "alchemy-api": "^1.3.2",
+    "twitter": "1.3.0"
   }
 }

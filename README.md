@@ -4,7 +4,7 @@
 ![shieldsIO](https://img.shields.io/david/UlisesGascon/Nodejs-hangouts-robot.svg)
 
 # Nodejs-hangouts-robot
-Robot de chat para Google hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola, entre otras cosas
+Robot de chat para Google hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola, Twitter, Alchemy Api... entre otras cosas...
 
 ![foto](img/Robotito_chat.png)
 
@@ -29,7 +29,7 @@ botPassword: "PASS"
 ```
 - Instalamos las dependencias y ejecutamos 
 ```
-npm install && node robot
+npm install && node index
 ```
 - Preguntamos al robot *Quien soy?* en el chat y respondera con algo parecido a esto
 ```
@@ -45,12 +45,31 @@ usuarioAutorizado: "loremloremymaslorem1123@public.talk.google.com",
 
 
 ### Eventos Automáticos
-- Las siguientes comunicaciones solo son relevantes a *config.usuarioAutorizado*, que será quien recibirá los mensajes.
+
+Las siguientes comunicaciones solo son relevantes a *config.usuarioAutorizado*, que será quien recibirá los mensajes.
 
 - Al arrancar la aplicación de Node... el robot saluda *Hola de nuevo, Jefe!*
 - Al cerrar la aplicación vía Ctrl+C... el robot se despide *Me piro! Ya no me quieres como antes...*
 - Al terminarse de manera natural la ejecucción... el robot se despide *Me piro! Vaciones por fín!*
 - Al tener un error inesperado y cerrarse... el robot se despide *Me piro! Cierre inesperado...*
+
+
+### Capturas
+
+
+
+![captura_1](img/captura_1.png)
+
+
+
+![captura_2](img/captura_2.png)
+
+
+
+### Manejo de servicios externos:
+
+Twitter y Alchemy pueden ser desactivados/activados desde *config.json*
+
 
 ### Preguntas y respuestas posibles:
 
@@ -60,6 +79,10 @@ Si deseas cambiarlo, solo tienes que reescribir las cadenas de texto en las line
 
 **Por defecto...**
 - Si nuestro mensaje no cumple al menos uno de los siguientes casos, por defecto el robot nos respondera *No te entiendo... Explicate mejor, Humano!*
+
+**Ayuda**
+- Responde con un listado de ids (preguntas/respuestas) disponibles.
+- Puedes ampliar los detalles (descripción, ejemplo, etc..) de un id en particular enviando `ayuda {id}`
 
 **Hola (Expresión regular)**
 - Se dispara cuando nuestro mensaje empieza con la palabra Hola/hola.
@@ -77,8 +100,39 @@ Si deseas cambiarlo, solo tienes que reescribir las cadenas de texto en las line
 **Quien soy?**
 - Responde con tu ID en formato *lorelipsum1234lorem12@public.talk.google.com* que es lo necesario para configurar el *usuarioAutorizado* en *config.js*
 
-**Timestamp**
+**hora**
 - Responde con la fecha y la hora en formato *MM/DD/YYYY, HH:MM:SS AM/PM*
+
+**Tweet**
+- Envia un tweet directamente. Puedes usar #hashtags y @menciones
+
+**System info**
+- Información del sistema(Kernel, Uptime, etc...) y su uso (Disco duro, memoria, cpu, procesos...)
+
+**Echo**
+- Devuelve el mensaje.
+
+
+**Alchemy (Estatus)**
+- Nos permite saber cuantas llamdas nos quedan a la API de Alchemy.
+
+
+**Alchemy (Reconocimiento Facial)**
+- Podemos enviar la URL de una foto y Alchemy relaizará un analisis.
+- Nos devuelve la información sobre lso personajes famosos que aparecen o datos biometricos relevantes si no.
+
+
+**Alchemy (Idioma)**
+- Reconoce el idioma de un texto o url.
+- Nos devuelve información relevante sobre el idioma, incluido un enlace a Wikipedia.
+
+
+**Alchemy (sentimiento)**
+- Análisis de sentimiento de un texto o url
+
+
+**Alchemy (emociones)**
+- Analisis por emociones de un texto o url
 
 
 **Terminal**
