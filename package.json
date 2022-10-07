@@ -23,6 +23,6 @@
   "dependencies": {
     "hangouts-bot": "^0.2.1",
     "alchemy-api": "^1.3.2",
-    "twitter": "1.3.0"
+    "twitter": "1.7.1"
   }
 }
