@@ -1,7 +1,5 @@
-![shieldsIO](https://img.shields.io/github/issues/UlisesGascon/Nodejs-hangouts-robot.svg)
-![shieldsIO](https://img.shields.io/github/release/UlisesGascon/Nodejs-hangouts-robot.svg)
-![shieldsIO](https://img.shields.io/github/license/UlisesGascon/Nodejs-hangouts-robot.svg)
-![shieldsIO](https://img.shields.io/david/UlisesGascon/Nodejs-hangouts-robot.svg)
+<h2 align="center">:warning: This repository is not longer maintained :warning:</h2>
+
 
 # Nodejs-hangouts-robot
 Robot de chat para Google hangouts desarrollado con Node.js. Permite el uso de la Terminal/Consola, Twitter, Alchemy Api... entre otras cosas...
